@@ -1,4 +1,103 @@
-# get editor completions based on the config schema
+format = """[╭─ $username@$hostname at $directory\
+$kubernetes\
+$git_branch\
+$git_commit\
+$git_state\
+$git_metrics\
+$git_status\
+$hg_branch\
+$docker_context\
+$package\
+$c\
+$cmake\
+$cobol\
+$daml\
+$dart\
+$deno\
+$dotnet\
+$elixir\
+$elm\
+$erlang\
+$fennel\
+$gleam\
+$golang\
+$guix_shell\
+$haskell\
+$haxe\
+$helm\
+$java\
+$julia\
+$kotlin\
+$gradle\
+$lua\
+$nim\
+$nodejs\
+$ocaml\
+$opa\
+$perl\
+$php\
+$pulumi\
+$purescript\
+$python\
+$quarto\
+$raku\
+$rlang\
+$red\
+$ruby\
+$rust\
+$scala\
+$solidity\
+$swift\
+$terraform\
+$typst\
+$vlang\
+$vagrant\
+$zig\
+$buf\
+$nix_shell\
+$conda\
+$meson\
+$spack\
+$env_var\
+$custom\
+$cmd_duration\
+$line_break\
+$jobs\
+$time\
+$status\
+$shell\
+╰─](bold #ffffff)$character\
+"""
+add_newline = false
+
+[hostname]
+ssh_only = false
+trim_at = "."
+format = "[$hostname]($style)"
+style = "bold #ff5555"
+disabled = false
+
+[character]
+success_symbol = "[\\$](bold #ffffff)" # bold #1e66f5
+error_symbol = "[\\$](bold #ff5555)"
+
+[username]
+style_user = "bold #bd93f9"
+format = "[$user]($style)"
+disabled = false
+show_always = true
+
+[cmd_duration]
+style = "bold purple"
+
+[git_branch]
+style = "bold #3399FF"
+
+[git_status]
+style = "bold red"
+
+[directory]
+style = "bold #00FF00"
 "$schema" = 'https://starship.rs/config-schema.json'
 
 format = '$all'
