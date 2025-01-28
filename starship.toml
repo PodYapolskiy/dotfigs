@@ -98,25 +98,3 @@ style = "bold red"
 
 [directory]
 style = "bold #00FF00"
-"$schema" = 'https://starship.rs/config-schema.json'
-
-format = '$all'
-
-# inserts a blank line between shell prompts
-add_newline = true
-
-[character]
-success_symbol = '[➜](bold white)'
-error_symbol = '[✗](bold red)'
-
-[cmd_duration]
-style = "bold purple"
-
-[git_branch]
-style = "bold #3399FF"
-
-[git_status]
-style = "bold red"
-
-[directory]
-style = "bold #00FF00"
