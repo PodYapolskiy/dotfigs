@@ -1,13 +1,11 @@
 if status is-interactive
     # Commands to run in interactive sessions can go here
-    
-    # aliases
-    alias tg="telegram-desktop"
-    alias n3="nnn -de"
-    alias c="clear"
-
-    # activate brew
-    eval "$(/home/linuxbrew/.linuxbrew/bin/brew shellenv)"
 end
+
+# aliases
+alias sl="sl -a"
+alias pyhton="sl"
+alias claer="sl"
+alias cler="sl"
 
 starship init fish | source
